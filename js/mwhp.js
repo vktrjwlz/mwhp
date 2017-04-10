@@ -95,7 +95,7 @@ mwhp.errng.prototype = {
     i = 0;
     while (attmpts < errng.mxattmpts) {
       attmpts++;
-      var vrt = vec2.fromValues((Math.random() * errng.rad) + errng.mn[0], 0);
+      var vrt = vec2.fromValues(Math.random() * errng.rad, 0);
       var angl = Math.random() * Math.PI * 2.0;
       mat2.fromRotation(rtmt, angl);
       vec2.transformMat2(vrt, vrt, rtmt);
